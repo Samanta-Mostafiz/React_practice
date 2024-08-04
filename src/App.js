@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Index from './ConditionalRender/Index';
+import EventChange from './EventHandler/EventChange';
+import EventBind from './EventHandler/EventBind';
+import StateHook from './StateHandling/StateHook';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Index/>
+      <EventChange/>
+      <EventBind/>
+      <StateHook/>  
     </div>
-  );
+  )
 }
-
 export default App;
+
