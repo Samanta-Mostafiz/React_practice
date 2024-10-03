@@ -1,56 +1,50 @@
 /* eslint-disable no-unused-vars */
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Index from './ConditionalRender/Index';
-import EventChange from './EventHandler/EventChange';
-import EventBind from './EventHandler/EventBind';
-import StateHook from './StateHandling/StateHook';
-import EventPropagation from './EventHandler/EventPropagation';
-import Form from './Form/Form';
-import Child from './State lifting/Child';
-import Home from './Basic todo app/Home';
-import Formik from './practice/Formik';
-import Toggling from './ButtonToggle/Toggling';
-import FAQS from './ButtonToggle/FAQS';
-import Effect from './Effect hook/Effect';
-import DataFetch from './Effect hook/DataFetch';
-import DataF from './customEffectHook/DataF';
-import Toastify from './Toastify';
-import UseReducer from './reducer hook';
-import context from './Use Context Hook/context'
-
-
+import Index from "./ConditionalRender/Index";
+import EventChange from "./EventHandler/EventChange";
+import EventBind from "./EventHandler/EventBind";
+import StateHook from "./StateHandling/StateHook";
+import EventPropagation from "./EventHandler/EventPropagation";
+import Form from "./Form/Form";
+import Child from "./State lifting/Child";
+import Home from "./Basic todo app/Home";
+import Formik from "./practice/Formik";
+import Toggling from "./ButtonToggle/Toggling";
+import FAQS from "./ButtonToggle/FAQS";
+import Effect from "./Effect hook/Effect";
+import DataFetch from "./Effect hook/DataFetch";
+import DataF from "./customEffectHook/DataF";
+import Toastify from "./Toastify";
+import UseReducer from "./reducer hook";
+import Component1 from "./prop drilling vs conext hook/Component1";
 
 function App() {
-  const data="i will be accessed from parent element";
+  const data = "i will be accessed from parent element";
   // child theke data ante
-  const handleChildData=(childData)=>{
+  const handleChildData = (childData) => {
     console.log("App:" + childData);
-  }
+  };
   return (
     <div>
-      <Index/>
-      <EventChange/>
-      <EventBind/>
-      <StateHook/>
-      <EventPropagation/>  
-      <Form/>
-      <Child data={data} onChildData={handleChildData}/>
-      <Home/>
+      <Index />
+      <EventChange />
+      <EventBind />
+      <StateHook />
+      <EventPropagation />
+      <Form />
+      <Child data={data} onChildData={handleChildData} />
+      <Home />
       <Formik />
-      <Toggling/>
-      <FAQS/>
-      <Effect/>
-      <Toastify/>
-      <UseReducer/>
-      <context/>
-      
+      <Toggling />
+      <FAQS />
+      <Effect />
+      <Toastify />
+      <UseReducer />
+    <Component1/>
       {/* <DataFetch/> */}
       {/* <DataF/> */}
-
-      
     </div>
-  )
+  );
 }
 export default App;
-
