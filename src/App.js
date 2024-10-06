@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
 
+
 import Index from "./ConditionalRender/Index";
 import EventChange from "./EventHandler/EventChange";
 import EventBind from "./EventHandler/EventBind";
@@ -18,6 +19,7 @@ import DataF from "./customEffectHook/DataF";
 import Toastify from "./Toastify";
 import UseReducer from "./reducer hook";
 import Component1 from "./prop drilling vs conext hook/Component1";
+import Navbar from "./navigation and routing/Navbar";
 
 function App() {
   const data = "i will be accessed from parent element";
@@ -41,7 +43,8 @@ function App() {
       <Effect />
       <Toastify />
       <UseReducer />
-    <Component1/>
+ 
+     
       {/* <DataFetch/> */}
       {/* <DataF/> */}
     </div>
